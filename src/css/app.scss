@@ -1,5 +1,12 @@
 // app global css in SCSS form
+
+// font
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 body {
   font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+body.body--dark {
+  --q-primary: #161717;
 }
