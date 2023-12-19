@@ -12,8 +12,6 @@
           <q-space/>
           <div class="q-gutter-x-sm">
             <q-btn outline color="secondary" label="프로필 편집"></q-btn>
-            <q-btn outline color="secondary" label="프로필 편집"></q-btn>
-            <q-btn outline color="secondary" label="프로필 편집"></q-btn>
           </div>
           <q-btn flat color="secondary" icon="more_horiz"></q-btn>
         </div>
