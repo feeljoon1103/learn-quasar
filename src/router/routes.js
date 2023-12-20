@@ -13,6 +13,10 @@ const routes = [
       { path: "flex-grid-2", component: () => import("pages/FlexGrid2.vue") },
     ]
   },
+  {
+    path: '/sub',
+    component: () => import('layouts/SubLayout.vue'),
+  },
 
   // Always leave this as last one,
   // but you can also remove it
