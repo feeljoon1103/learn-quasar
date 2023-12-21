@@ -14,6 +14,7 @@
         <q-toolbar-title>
           Quasar App
         </q-toolbar-title>
+        <q-btn stretch flat label="Main Layout" to="/" />
       </q-toolbar>
     </q-header>
 
@@ -46,8 +47,8 @@
 import { ref } from 'vue'
 
 const items = ref([
-  {title: 'Sub Page 1', to: '/sub/page-1'},
-  {title: 'Sub Page 2', to: '/sub/page-2'},
+  {title: 'Sub Page 1', to: '/sub/sub-page-1'},
+  {title: 'Sub Page 2', to: '/sub/sub-page-2'},
 ]);
 
 const leftDrawerOpen = ref(false)
