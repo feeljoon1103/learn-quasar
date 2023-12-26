@@ -7,7 +7,7 @@
       >
         <q-card-section>
           <div class="text-h6">Our Changing Planet</div>
-          <div class="text-subtitle2">by John Doe</div>
+          <div class="text-subtitle2">by Joon</div>
         </q-card-section>
 
         <q-card-section class="q-pt-none">

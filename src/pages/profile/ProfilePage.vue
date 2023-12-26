@@ -51,7 +51,7 @@
         <q-tab name="alarms" icon="alarm" label="저장됨" />
         <q-tab name="movies" icon="movie" label="태그됨" />-->
         <q-route-tab :ripple="false" icon="edit" to="/profile" label="게시글" exact/>
-        <q-route-tab :ripple="false" icon="bookmark_border" to="/profile/saved" label="저장됨" exact />
+        <q-route-tab :ripple="false" icon="bookmark_border" to="/profile/saved" label="저장" exact />
         <q-route-tab :ripple="false" icon="local_offer" to="/profile/tagged" label="태그됨" exact />
       </q-tabs>
       <router-view/>
