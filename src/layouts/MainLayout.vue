@@ -25,6 +25,17 @@
           <q-avatar>
             <img src="/success.png">
           </q-avatar>
+          <q-menu :offset="[0, 10]">
+            <q-list style="min-width: 100px">
+              <q-item clickable v-close-popup to="/profile">
+                <q-item-section>프로필</q-item-section>
+              </q-item>
+              <q-separator />
+              <q-item clickable v-close-popup to="/auth/sign-in">
+                <q-item-section>로그아웃</q-item-section>
+              </q-item>
+            </q-list>
+          </q-menu>
         </q-btn>
       </q-toolbar>
     </q-header>
