@@ -19,6 +19,7 @@ const routes = [
           { path: "tagged", component: () => import("pages/profile/ProfileTagged.vue") },
         ]
       },
+      { path: "form-handling", component: () => import("pages/FormHandling.vue") },
     ]
   },
   {
