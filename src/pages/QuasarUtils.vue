@@ -32,7 +32,8 @@
       <!-- 공백 -->
       <div class="text-h6">
         objA === objB - {{ objA === objB }}
-      </div><div class="text-h6">
+      </div>
+      <div class="text-h6">
         deepEqual(objA, objB) - {{ deepEqual(objA, objB)}}
       </div>
     </section>

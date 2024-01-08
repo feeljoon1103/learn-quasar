@@ -39,9 +39,10 @@
         <q-toggle
           :label="`동의 하시겠습니가?`"
           v-model="form.accept"
-          false-value="Disagreed"
-          true-value="Agreed"
         />
+<!--      false-value="Disagreed"
+          true-value="Agreed"-->
+
 
         <div class="q-gutter-x-sm">
           <q-btn label="validate" color="secondary" @click="validate"/>
@@ -58,6 +59,9 @@
 
 <script setup>
 import { ref } from "vue";
+import { useQuasar } from "quasar";
+
+const $q = useQuasar();
 
 const myForm = ref(null);
 const form = ref({
@@ -91,11 +95,18 @@ const reset = () => {
 }
 
 const onSubmit = () => {
+  console.log(form.value.accept);
   if (form.value.accept !== true) {
     alert("동의 해주세요.");
-  } else {
-    alert("성공!");
+    return;
   }
+
+  $q.loading.show();
+
+  setTimeout(() => {
+    $q.loading.hide();
+    alert("성공!");
+  }, 3000)
 }
 
 const onReset = () => {
@@ -104,7 +115,8 @@ const onReset = () => {
   form.value.tags = [];
   form.value.date = "2022/01/01";
   form.value.accept = false;
-}
+};
+
 
 </script>
 
